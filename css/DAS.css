@@ -1,0 +1,63 @@
+.brands_list{
+    width: 100%;
+    min-height: 350px;
+    background-color: #fff;
+}
+.brands_list > h1{
+    margin: 0;
+}
+
+.brands_list .dropdown-container {
+    width: 100%;
+    display: flex;
+    gap: 20px; /* Space between buttons */
+    flex-wrap: wrap; /* Ensure it wraps on smaller screens */
+}
+
+.brands_list .dropdown {
+    padding:20px 20px ;
+    position: relative;
+    display: inline-block;
+}
+
+.brands_list .dropbtn {
+    background-color: rgba(132, 83, 210, 1);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    white-space: nowrap; /* Prevents text wrapping */
+}
+
+.brands_list .dropbtn:hover {
+    background-color: rgb(100, 66, 155);
+}
+
+.brands_list .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.brands_list .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: 600;
+}
+
+/* .brands_list .dropdown-content a:hover {
+    background-color: #6d6d6d;
+} */
+
+.brands_list .dropdown:hover .dropdown-content {
+    display: block;
+}

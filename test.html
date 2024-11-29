@@ -3,223 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BRM H2R HRIS Admin</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Dropdown Buttons with Brands and Models</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <style>
-  /* Base styles */
-body {
+    body {
     font-family: Arial, sans-serif;
-    background-color: white;
-    color: black;
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    width: 80%;
-    margin: 20px auto;
-}
-
-header {
-    text-align: left;
-    border-bottom: 2px solid #9875E4;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-}
-
-h1 {
-    font-size: 2rem;
-    color: black;
-}
-
-.job-details p {
-    margin: 5px 0;
-    font-size: 1rem;
-}
-
-section {
-    margin-bottom: 20px;
-    text-align: left;
-}
-
-h2 {
-    font-size: 1.5rem;
-    color: #9875E4;
-    margin-bottom: 10px;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    margin-bottom: 10px;
-}
-
-.apply-form form {
     display: flex;
-    flex-direction: column;
-    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
 }
 
-.form-group label {
-    font-size: 1rem;
-    margin-bottom: 5px;
+.dropdown-container {
+    display: flex;
+    gap: 20px; /* Space between buttons */
+    flex-wrap: wrap; /* Ensure it wraps on smaller screens */
 }
 
-.form-group input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 100%;
-    box-sizing: border-box;
+.dropdown {
+    position: relative;
+    display: inline-block;
 }
 
-.submit-btn {
-    padding: 10px 20px;
-    background-color: #9875E4;
+.dropbtn {
+    background-color: #4CAF50;
     color: white;
+    padding: 10px 20px;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
-    font-size: 1rem;
-    width: fit-content;
-    align-self: flex-start;
+    font-size: 16px;
+    border-radius: 5px;
+    white-space: nowrap; /* Prevents text wrapping */
 }
 
-.submit-btn:hover {
-    background-color: #7a5dc2;
+.dropbtn:hover {
+    background-color: #45a049;
 }
 
-/* Responsive styles */
-@media (max-width: 768px) {
-    .container {
-        width: 90%;
-    }
-
-    h1 {
-        font-size: 1.8rem;
-    }
-
-    h2 {
-        font-size: 1.3rem;
-    }
-
-    .job-details p {
-        font-size: 0.9rem;
-    }
-
-    ul li {
-        font-size: 0.9rem;
-    }
-
-    .form-group input {
-        font-size: 0.9rem;
-        padding: 8px;
-    }
-
-    .submit-btn {
-        font-size: 0.9rem;
-        padding: 8px 15px;
-    }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
-@media (max-width: 480px) {
-    h1 {
-        font-size: 1.5rem;
-    }
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
 
-    h2 {
-        font-size: 1.2rem;
-    }
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
 
-    .job-details p {
-        font-size: 0.8rem;
-    }
-
-    ul li {
-        font-size: 0.8rem;
-    }
-
-    .form-group input {
-        font-size: 0.8rem;
-        padding: 6px;
-    }
-
-    .submit-btn {
-        font-size: 0.8rem;
-        padding: 6px 10px;
-    }
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 </style>
 <body>
-    <div class="container">
-        <header>
-            <h1>BRM H2R HRIS Admin</h1>
-            <div class="job-details">
-                <p><strong>Experience:</strong> 5-7 Years</p>
-                <p><strong>Location:</strong> Pune, India</p>
-                <p><strong>Job ID:</strong> YF075</p>
+    <div class="dropdown-container">
+        <!-- Dell Dropdown -->
+        <div class="dropdown">
+            <button class="dropbtn">Dell</button>
+            <div class="dropdown-content">
+                <a href="#">XPS</a>
+                <a href="#">Latitude</a>
+                <a href="#">Alienware</a>
             </div>
-        </header>
+        </div>
 
-        <section class="key-responsibilities">
-            <h2>Key Responsibilities:</h2>
-            <ul>
-                <li>Proven ability to design and implement complex Workday configurations to meet business requirements.</li>
-                <li>Excellent problem-solving skills, with the ability to diagnose and resolve system issues effectively.</li>
-                <li>Strong analytical and project management skills, with the ability to lead projects from conception to completion.</li>
-                <li>Excellent communication and interpersonal skills, capable of working collaboratively with multiple teams across the organization.</li>
-            </ul>
-        </section>
+        <!-- HP Dropdown -->
+        <div class="dropdown">
+            <button class="dropbtn">HP</button>
+            <div class="dropdown-content">
+                <a href="#">EliteBook</a>
+                <a href="#">Spectre x360</a>
+                <a href="#">Pavilion</a>
+            </div>
+        </div>
 
-        <section class="skills">
-            <h2>Skill Required:</h2>
-            <ul>
-                <li>Administer and manage the Workday HCM suite, including Core HCM, Security, Time and Absence, Compensation, and Talent Management modules.</li>
-                <li>Design, configure, and maintain HR Business Processes (HR BP) in accordance with organizational policies and best practices.</li>
-                <li>Implement and maintain Workday security roles and permissions, ensuring data integrity and compliance with privacy regulations.</li>
-            </ul>
-        </section>
+        <!-- Lenovo Dropdown -->
+        <div class="dropdown">
+            <button class="dropbtn">Lenovo</button>
+            <div class="dropdown-content">
+                <a href="#">ThinkPad</a>
+                <a href="#">Yoga</a>
+                <a href="#">Legion</a>
+            </div>
+        </div>
 
-        <section class="qualification">
-            <h2>Qualification:</h2>
-            <ul>
-                <li>Bachelor's degree in Human Resources, Information Systems, Business Administration, or related field.</li>
-                <li>Workday HCM certification is required.</li>
-            </ul>
-        </section>
+        <!-- Microsoft Dropdown -->
+        <div class="dropdown">
+            <button class="dropbtn">Microsoft</button>
+            <div class="dropdown-content">
+                <a href="#">Surface Pro</a>
+                <a href="#">Surface Laptop</a>
+            </div>
+        </div>
 
-        <section class="about-company">
-            <h2>About Company:</h2>
-            <p>Yantra is a Management and Information Technology consulting firm established in 2008, headquartered in Santa Clara, California, with offices in Canada, India, and the Philippines. At the forefront of digital transformation, steering businesses toward unparalleled success in today’s dynamic and ever-evolving landscape.</p>
-        </section>
+        <!-- Acer Dropdown -->
+        <div class="dropdown">
+            <button class="dropbtn">Acer</button>
+            <div class="dropdown-content">
+                <a href="#">Predator</a>
+                <a href="#">Swift</a>
+                <a href="#">Aspire</a>
+            </div>
+        </div>
 
-        <section class="apply-form">
-            <h2>Apply Online</h2>
-            <form action="#" method="POST" enctype="multipart/form-data">
-                <div class="form-group">
-                    <label for="name">Name*</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email*</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="phone">Phone*</label>
-                    <input type="tel" id="phone" name="phone" required>
-                </div>
-                <div class="form-group">
-                    <label for="resume">Attach Resume*</label>
-                    <input type="file" id="resume" name="resume" accept="application/pdf" required>
-                </div>
-                <button type="submit" class="submit-btn">Submit</button>
-            </form>
-        </section>
+        <!-- Asus Dropdown -->
+        <div class="dropdown">
+            <button class="dropbtn">Asus</button>
+            <div class="dropdown-content">
+                <a href="#">ROG</a>
+                <a href="#">ZenBook</a>
+                <a href="#">VivoBook</a>
+            </div>
+        </div>
+
+        <!-- Razer Dropdown -->
+        <div class="dropdown">
+            <button class="dropbtn">Razer</button>
+            <div class="dropdown-content">
+                <a href="#">Blade</a>
+                <a href="#">Blade Stealth</a>
+            </div>
+        </div>
+
+        <!-- Samsung Dropdown -->
+        <div class="dropdown">
+            <button class="dropbtn">Samsung</button>
+            <div class="dropdown-content">
+                <a href="#">Galaxy Book</a>
+                <a href="#">Galaxy Tab</a>
+            </div>
+        </div>
+
+        <!-- Sony Dropdown -->
+        <div class="dropdown">
+            <button class="dropbtn">Sony</button>
+            <div class="dropdown-content">
+                <a href="#">VAIO</a>
+            </div>
+        </div>
     </div>
 </body>
 </html>
