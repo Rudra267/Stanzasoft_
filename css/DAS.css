@@ -5,35 +5,40 @@
 }
 .brands_list > h1{
     margin: 0;
+
 }
 
 .brands_list .dropdown-container {
     width: 100%;
     display: flex;
-    gap: 20px; /* Space between buttons */
+    gap: 50px; /* Space between buttons */
     flex-wrap: wrap; /* Ensure it wraps on smaller screens */
+    padding: 20px 10px;
 }
 
 .brands_list .dropdown {
-    padding:20px 20px ;
+    max-width: 120px;
+    max-height: 50px;
+    /* background-color: red; */
     position: relative;
     display: inline-block;
 }
 
 .brands_list .dropbtn {
-    background-color: rgba(132, 83, 210, 1);
-    color: white;
-    padding: 10px 20px;
+    background-color:transparent;
+    /* color: white; */
+    width: 100%;
+    object-fit: contain;
+    height: 100%;
     border: none;
     cursor: pointer;
-    font-size: 16px;
+    scale: 1;
     border-radius: 5px;
-    white-space: nowrap; /* Prevents text wrapping */
 }
 
-.brands_list .dropbtn:hover {
+/* .brands_list .dropbtn:hover {
     background-color: rgb(100, 66, 155);
-}
+} */
 
 .brands_list .dropdown-content {
     display: none;
