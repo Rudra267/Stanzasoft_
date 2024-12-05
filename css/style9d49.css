@@ -116,6 +116,8 @@ body, p {
 }
 
 :root {
+    --lightL:linear-gradient(90deg, rgba(0,71,255,1) 0%, rgba(132,83,210,1) 49%);
+    --lightS:linear-gradient(90deg, rgba(0,71,255,1) 0%, rgba(132,83,210,1) 11%);
     --light:linear-gradient(90deg, rgba(0,71,255,1) 0%, rgba(132,83,210,1) 70%) !important;
     --brandColour:linear-gradient(to left, rgb(184, 150, 255) 47px, rgb(0, 246, 255) 131.6px, rgb(0, 255, 240) 100%);
 --borderColour:rgb(184, 150, 255) 47px, rgb(0, 246, 255) 131.6px, rgb(0, 255, 240) 100%;
@@ -570,7 +572,7 @@ body.light-theme .step_holder{
 
 #roadmap-contact > .container_box{
   height: 80vh;
-  padding: 10% 10%;
+  padding: 4% 10%;
     
 }
 
@@ -6491,7 +6493,7 @@ body.light-theme .fn_cs_shortabout .about_left {
     }
     
     .para01{
-        font-size: 14px !important;
+        font-size: 17px !important;
         color: #fff !important;
         font-family: extra;
         
@@ -7335,3 +7337,9 @@ body.light-theme .carrier .carrier-right .lower> h6 > svg{
     flex-direction: column;
     width: 98%;
 }
+
+/* .header-nav{
+    width: 100%;
+    height: 100px;
+    background-color: transparent;
+} */

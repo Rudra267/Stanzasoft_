@@ -292,7 +292,7 @@ margin: 0;
     margin: 0px 0 40px 0;
     font-size: 3em;
     color: #000;
-    background: var(--light);
+    background: var(--lightL);
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
     font-family: GilB;
@@ -430,7 +430,7 @@ margin: 0;
     font-weight: 700;
     font-size: 2em;
     color: #000;
-    background: linear-gradient(90deg, rgba(0,71,255,1) 0%, rgba(132,83,210,1) 37%);
+    background: var(--lightS);
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
 }
@@ -455,7 +455,7 @@ margin: 0;
     line-height: 30px;
 }
 .Why_CLM > h1{
-    background: linear-gradient(90deg, rgba(0,71,255,1) 0%, rgba(132,83,210,1) 37%);
+    background: var(--lightS);
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
 }
