@@ -1289,3 +1289,8 @@ color: #000;
   }
 }
 
+@media (min-width:1236px){
+  .target_head{
+    padding-left: 126px !important;
+  }
+}
