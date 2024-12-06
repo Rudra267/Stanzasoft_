@@ -12,7 +12,7 @@
     font-family: extra;
 }
 .button_Design > .text_buttonDesign_section1 > h2 > span{
-    color: #0076C6;
+    color: #0047ff;
 }
 .button_Design > .text_buttonDesign_section1 > p{
    
@@ -20,10 +20,10 @@
     font-family:extra;
 }
 .button_Design > .text_buttonDesign_section1 > p > span{
-    color: #0076C6;
+    color: #0047ff;
 }
 .buttonDesign_section1 > h1 >  span{
-    color: #0076C6;
+    color: #0047ff;
     /* display: flex; */
     /* justify-content: center;
     align-items: center;
